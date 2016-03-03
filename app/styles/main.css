@@ -5,3 +5,7 @@
 .list-box-height {
   height: 100% !important;
 }
+
+.btn-size {
+  width: 50%;
+}
