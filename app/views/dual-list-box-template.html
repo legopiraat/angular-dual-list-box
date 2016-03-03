@@ -1,0 +1,42 @@
+<div class="dual-list-box-height">
+  <div class="col-sm-5 list-box-height">
+    <select class="form-control list-box-height" ng-model="selectedLeft" ng-options="option as option for option in optionsLeft"
+            multiple>
+    </select>
+  </div>
+
+  <div class="col-sm-2">
+    <button class="btn btn-default" ng-click="moveAllToRight()" ng-disabled="optionsLeft.length <= 0">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    </button>
+
+    <br>
+
+    <button class="btn btn-default" ng-click="moveToRight(selectedLeft)"
+            ng-disabled="optionsLeft.length <= 0 || selectedLeft == undefined">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    </button>
+
+    <br>
+
+    <button class="btn btn-default" ng-click="moveAllToLeft()" ng-disabled="optionsRight.length <= 0">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true">
+      </span><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </button>
+
+    <br>
+
+    <button class="btn btn-default" ng-click="moveToLeft(selectedRight)"
+            ng-disabled="optionsRight.length <= 0 || selectedRight == undefined">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <div class="col-sm-5 list-box-height">
+    <select class="form-control list-box-height" ng-model="selectedRight" ng-options="option as option for option in optionsRight"
+            multiple>
+    </select>
+  </div>
+</div>
+</div>

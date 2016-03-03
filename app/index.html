@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body ng-app="dualListBox">
+
+<div class="container" ng-controller="mainController">
+  <h1>Stuff to push it down</h1>
+  <dual-list-box options-left="left" options-right="right"></dual-list-box>
+</div>
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+
+<script src="scripts/app.js"></script>
+<script src="scripts/mainController.js"></script>
+
+<script src="scripts/dual-list-box-directive.js"></script>
+</body>
+</html>
